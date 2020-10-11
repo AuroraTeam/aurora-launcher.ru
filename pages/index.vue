@@ -1,65 +1,111 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">aurora-web</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <main>
+      <div class="container">
+        <header class="row">
+          <div class="col-12 col-md-5 col-lg-6 lead">
+            <h1>Aurora Launcher</h1>
+            <p>
+              Лаунчер с удобной кастомизацией дизайна для игровых проектов
+              Minecraft
+            </p>
+          </div>
+          <div class="d-none d-md-block col-md-7 col-lg-6">
+            <img class="img-fluid" src="/launcher.jpg" alt="" />
+          </div>
+        </header>
       </div>
-    </div>
+      <div class="container">
+        <div class="row advantages">
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="palette" />
+            </div>
+            Легкая и удобная кастомизация интерфейса
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="book" />
+            </div>
+            Понятная документация, адекватный вывод ошибок
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="bomb" />
+            </div>
+            Отсутствие зависимости от Java и JavaFX
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="star" />
+            </div>
+            И многое другое
+          </div>
+        </div>
+      </div>
+      <div class="container dev-progress">
+        <strong>Прогресс разработки:</strong>
+        <p>Aurora Launcher v0.1.0 is 6% complete</p>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="d-none d-sm-block col-sm-2 col-lg-1">
+            <Logo />
+          </div>
+          <div class="col-12 col-sm-10 col-md-8 col-lg-9">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://github.com/AuroraTeam"
+                  >GitHub</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://discord.gg/2NvYTcv">Discord</a>
+              </li>
+            </ul>
+            Aurora Team &copy; 2020
+          </div>
+          <div class="d-none d-md-block col-2 text-right align-self-start">
+            by <a href="https://jocat.ru" target="_blank">JCat</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="sass" scoped>
+header
+  padding: 50px 0
+  .lead
+    padding-right: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+  img
+    border-radius: 10px
+.advantages
+  padding: 80px 0 20px
+  font-size: 15px
+  .block
+    text-align: center
+    margin-bottom: 80px
+  .icon
+    font-size: 32px
+    margin: auto
+    margin-bottom: 20px
+    width: 72px
+    line-height: 72px
+    border-radius: 50%
+    background-color: #7c4dff
+    color: #fff
+.dev-progress
+  text-align: center
+  padding: 20px 15px
+  strong
+    font-size: 28px
+footer
+  padding: 30px 0
 </style>
