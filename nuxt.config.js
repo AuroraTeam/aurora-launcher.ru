@@ -32,6 +32,14 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css',
+        integrity:
+          'sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z',
+        crossorigin: 'anonymous',
+      },
       // Icons
       {
         rel: 'apple-touch-icon',
@@ -78,11 +86,11 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     'nuxt-fontawesome',
-    '@nuxtjs/markdownit',
+    // '@nuxtjs/markdownit',
   ],
 
   fontawesome: {
@@ -101,10 +109,14 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
-  markdownit: {
-    use: ['markdown-it-attrs'],
-  },
+  // markdownit: {
+  //   use: ['markdown-it-attrs'],
+  // },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    // analyze: {
+    //   analyzerMode: 'static',
+    // },
+  },
 }
