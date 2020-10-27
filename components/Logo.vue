@@ -1,5 +1,5 @@
 <template>
-  <img class="img-fluid" src="logo.png" alt="" />
+  <img class="img-fluid" src="/logo.png" alt="" />
 </template>
 
 <style lang="sass" scoped>
