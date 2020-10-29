@@ -30,7 +30,12 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap',
+          'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap',
       },
       {
         rel: 'stylesheet',
@@ -90,14 +95,21 @@ export default {
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
     'nuxt-fontawesome',
-    // '@nuxtjs/markdownit',
+    '@nuxtjs/markdownit',
   ],
 
   fontawesome: {
     imports: [
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faPalette', 'faBook', 'faBomb', 'faStar'],
+        icons: [
+          'faPalette',
+          'faBook',
+          'faBomb',
+          'faStar',
+          'faAngleLeft',
+          'faAngleRight',
+        ],
       },
       {
         set: '@fortawesome/free-brands-svg-icons',
@@ -109,9 +121,9 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
-  // markdownit: {
-  //   use: ['markdown-it-attrs'],
-  // },
+  markdownit: {
+    use: ['markdown-it-attrs'],
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
