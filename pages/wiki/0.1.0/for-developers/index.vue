@@ -2,7 +2,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   mounted() {
-    this.$router.replace('/wiki/0.1.0/for-developers/mirrors')
+    this.$router.replace('/wiki/0.1.0/for-developers/api')
   },
   head: {
     title: 'Для разработчиков',

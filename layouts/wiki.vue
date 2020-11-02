@@ -6,29 +6,14 @@
       <Nuxt />
       <RightAside />
     </main>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"
-      integrity="sha256-Y+Budm2wBEjYjbH0qcJRmLuRBFpXd0VKxl6XhdS4hgA="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"
-      integrity="sha256-ht8ay6ZTPZfuixYB99I5oRpCLsCq7Do2LjEYLwbe+X8="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-okaidia.min.css"
-      integrity="sha256-Ykz0nNWK7w4QWJUYR7OraN4773aMB/11aMt1nZyrhuQ="
-      crossorigin="anonymous"
-    /> -->
   </div>
 </template>
+
+<script lang="ts">
+import 'highlight.js/styles/monokai.css'
+import Vue from 'vue'
+export default Vue.extend({})
+</script>
 
 <style lang="sass">
 aside
@@ -81,6 +66,8 @@ section
   font-family: 'Rubik', sans-serif
   @media (max-width: 1024px)
     width: 100%
+  a:hover
+    color: #000
 .head
   font-weight: 300
 </style>

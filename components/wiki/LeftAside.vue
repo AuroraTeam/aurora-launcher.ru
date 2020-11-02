@@ -1,12 +1,11 @@
 <template>
   <aside :class="showMenu ? 'open' : ''">
     <div class="menu">
-      <nuxt-link to="/wiki/0.1.0/for-developers" class="active"
-        >Для разработчиков</nuxt-link
-      >
+      <nuxt-link to="/wiki/0.1.0/for-developers">Для разработчиков</nuxt-link>
       <ul>
         <li>
-          <nuxt-link to="/wiki/0.1.0/for-developers/mirrors" class="active"
+          <nuxt-link to="/wiki/0.1.0/for-developers/api">API</nuxt-link>
+          <nuxt-link to="/wiki/0.1.0/for-developers/mirrors"
             >Альтернативные зеркала</nuxt-link
           >
         </li>

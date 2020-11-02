@@ -1,3 +1,6 @@
+import hljs from 'highlight.js'
+import MarkdownIt from 'markdown-it'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -123,6 +126,15 @@ export default {
 
   markdownit: {
     use: ['markdown-it-attrs'],
+    highlight(str, lang) {
+      const tpl = '<pre class="hljs"><code>{code}</code></pre>'
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return tpl.replace('{code}', hljs.highlight(lang, str, true).value)
+        } catch (__) {}
+      }
+      return tpl.replace('{code}', new MarkdownIt().utils.escapeHtml(str))
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
