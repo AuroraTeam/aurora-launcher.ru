@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 12
+
+      - name: Download dependencies
+        run: npm install
+
+      - name: Generate Site
+        run: npm run generate
+
+      - name: Deploy Site
+        uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          SOURCE: "dist/"
+          TARGET: ${{ secrets.SITE_DIR }}

@@ -45,7 +45,7 @@
       </div>
       <div class="container dev-progress">
         <strong>Прогресс разработки:</strong>
-        <p>Aurora Launcher v0.1.0 is 6% complete</p>
+        <p>Aurora Launcher v0.1.0 is 7% complete</p>
       </div>
     </main>
     <footer>
