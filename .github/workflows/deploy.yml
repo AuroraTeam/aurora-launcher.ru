@@ -19,10 +19,20 @@ jobs:
       - name: Download dependencies
         run: npm install
 
-      - name: Generate Site
+      - name: Generating the site
         run: npm run generate
 
-      - name: Deploy Site
+      - name: Cleaning up the site directory before deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_SERVER_IP }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.SITE_DIR }}
+            rm -rf *
+
+      - name: Deploying the site
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -31,7 +41,7 @@ jobs:
           SOURCE: "dist/"
           TARGET: ${{ secrets.SITE_DIR }}
 
-      - name: Purge Cloudflare cache
+      - name: Clearing the Cloudflare cache
         uses: jakejarvis/cloudflare-purge-action@master
         env:
           CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
