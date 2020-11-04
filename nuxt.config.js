@@ -40,14 +40,6 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap',
       },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css',
-        integrity:
-          'sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z',
-        crossorigin: 'anonymous',
-      },
       // Icons
       {
         rel: 'apple-touch-icon',
@@ -94,7 +86,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    // 'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
     'nuxt-fontawesome',
@@ -139,6 +131,14 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extend(config, { isDev, isClient }) {
+      if (isClient && !isDev) {
+        config.optimization.splitChunks.maxSize = 250000
+      }
+    },
+    babel: {
+      compact: true,
+    },
     // analyze: {
     //   analyzerMode: 'static',
     // },
