@@ -127,7 +127,7 @@ export default {
   markdownit: {
     use: ['markdown-it-attrs'],
     highlight(str, lang) {
-      const tpl = '<pre class="hljs"><code>{code}</code></pre>'
+      const tpl = '<pre><code class="hljs">{code}</code></pre>'
       if (lang && hljs.getLanguage(lang)) {
         try {
           return tpl.replace('{code}', hljs.highlight(lang, str, true).value)
