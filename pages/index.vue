@@ -55,7 +55,7 @@
             <Logo />
           </div>
           <div class="col-12 col-sm-10 col-md-8 col-lg-9">
-            <ul class="list-inline">
+            <ul class="list-inline m-0">
               <li class="list-inline-item">
                 <a target="_blank" href="https://github.com/AuroraTeam"
                   >GitHub</a
@@ -67,8 +67,9 @@
             </ul>
             Aurora Team &copy; 2020
           </div>
-          <div class="d-none d-md-block col-2 text-right align-self-start">
-            by <a href="https://jocat.ru" target="_blank">JCat</a>
+          <div class="d-none d-md-block col-2 text-right">
+            by <a href="https://jocat.ru" target="_blank">JCat</a> as<br />
+            <a href="https://aurora-team.ru" target="_blank">Aurora Team</a>
           </div>
         </div>
       </div>
