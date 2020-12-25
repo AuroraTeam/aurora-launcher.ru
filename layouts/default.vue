@@ -20,8 +20,8 @@ body
   height: 100vh
   display: flex
   flex-direction: column
-  background: #222 url('/bg.png') fixed
-  background-size: cover
+  background: #222 url('/bg.png') fixed no-repeat
+  background-size: contain
   font-family: 'Comfortaa', sans-serif
   color: #fff
 
