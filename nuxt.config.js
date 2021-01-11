@@ -91,6 +91,15 @@ export default {
     // '@nuxtjs/axios',
     'nuxt-fontawesome',
     '@nuxtjs/markdownit',
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '68187730',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      },
+    ],
   ],
 
   fontawesome: {
