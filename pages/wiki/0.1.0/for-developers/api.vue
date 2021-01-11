@@ -46,7 +46,7 @@ interface ResponseError {
 
 В данных примерах `uuidv4` реализует тип строки являющийся валидным <a href="https://ru.wikipedia.org/wiki/UUID#Версия_4_(случайный)" target="_blank">uuidv4 идентификатором</a>.
 
-Для отправки запросов на лаунчер-сервер из браузера или Node.js сервера, вы можете использовать оффициальную библиотеку <a href="https://www.npmjs.com/package/aurora-api" target="_blank">AuroraAPI</a>.
+Для отправки запросов на лаунчер-сервер из браузера или Node.js сервера, вы можете использовать официальную библиотеку <a href="https://www.npmjs.com/package/aurora-api" target="_blank">AuroraAPI</a>.
 
 ## Типы запросов
 
