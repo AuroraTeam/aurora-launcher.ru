@@ -5,6 +5,7 @@
       Aurora Launcher
     </nuxt-link>
     <nav>
+      <nuxt-link to="/roadmap">Дорожная карта</nuxt-link>
       <nuxt-link to="/wiki">База знаний</nuxt-link>
     </nav>
   </header>
