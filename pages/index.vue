@@ -65,7 +65,7 @@
                 <a target="_blank" href="https://discord.gg/2NvYTcv">Discord</a>
               </li>
             </ul>
-            Aurora Team &copy; 2020
+            Aurora Team &copy; 2020-2021
           </div>
           <div class="d-none d-md-block col-2 text-right">
             by <a href="https://jocat.ru" target="_blank">JCat</a> as<br />
