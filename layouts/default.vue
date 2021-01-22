@@ -20,8 +20,8 @@ body
   height: 100vh
   display: flex
   flex-direction: column
-  background: url('/bg.png') fixed no-repeat, #111 url('/ny_bg.png') fixed
-  // background: #222 url('/bg.png') fixed no-repeat
+  // background: url('/bg.png') fixed no-repeat, #111 url('/ny_bg.png') fixed // Happy New Year Yopta
+  background: #1a1a1a url('/bg.png') fixed no-repeat
   font-family: 'Comfortaa', sans-serif
   color: #fff
 
