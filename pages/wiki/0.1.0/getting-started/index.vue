@@ -2,7 +2,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   layout: 'wiki',
-  mounted() {
+  created() {
     this.$router.replace('/wiki/0.1.0/getting-started/introduction')
   },
   head: {
