@@ -1,10 +1,20 @@
 <template>
   <aside :class="showMenu ? 'open' : ''">
     <div class="menu">
+      <nuxt-link to="/wiki/0.1.0/getting-started">Базовая настройка</nuxt-link>
+      <ul>
+        <li>
+          <nuxt-link to="/wiki/0.1.0/getting-started/clients"
+            >Загрузка клиентов</nuxt-link
+          >
+        </li>
+      </ul>
       <nuxt-link to="/wiki/0.1.0/for-developers">Для разработчиков</nuxt-link>
       <ul>
         <li>
           <nuxt-link to="/wiki/0.1.0/for-developers/api">API</nuxt-link>
+        </li>
+        <li>
           <nuxt-link to="/wiki/0.1.0/for-developers/mirrors"
             >Альтернативные зеркала</nuxt-link
           >
@@ -37,6 +47,8 @@ export default Vue.extend({
     },
   },
 })
+
+// TODO Автоматизировать менюшку
 </script>
 
 <style lang="sass" scoped>
