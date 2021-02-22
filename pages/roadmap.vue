@@ -47,7 +47,7 @@
   border-left: 3px solid #7c4dff;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   letter-spacing: 0.2px;
   position: relative;
