@@ -40,8 +40,8 @@ aside
       text-decoration: none
       display: block
       &.active
-      font-weight: 600
-      color: #333
+        font-weight: 600
+        color: #333
       &:hover
         color: #000
   .btn
