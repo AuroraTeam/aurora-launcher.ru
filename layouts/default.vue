@@ -50,7 +50,7 @@ a
   position: fixed
   width: 100vw
   height: 100vh
-  background: url('/bg.png') fixed no-repeat
+  background: rgba(0, 0, 0, 0.4) url('/bg.png') fixed no-repeat
   z-index: -1
 </style>
 
