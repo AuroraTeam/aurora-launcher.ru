@@ -1,9 +1,16 @@
 <template>
   <div class="logo">
     <img class="img-fluid" src="/logo.png" alt="" />
-    <span class="logo-text">Aurora Launcher</span>
+    <span v-if="!hide" class="logo-text">Aurora Launcher</span>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  props: ['hide']
+})
+</script>
 
 <style lang="sass" scoped>
 .logo

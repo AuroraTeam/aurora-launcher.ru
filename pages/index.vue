@@ -51,10 +51,10 @@
     <footer>
       <div class="container">
         <div class="row align-items-center">
-          <div class="d-none d-sm-block col-sm-2 col-lg-1">
-            <Logo />
+          <div class="col-3 col-sm-2 col-lg-1">
+            <Logo hide="true" />
           </div>
-          <div class="col-12 col-sm-10 col-md-8 col-lg-9">
+          <div class="col-9 col-sm-10 col-md-7 col-lg-9">
             <ul class="list-inline m-0">
               <li class="list-inline-item">
                 <a target="_blank" href="https://github.com/AuroraTeam"
@@ -67,7 +67,7 @@
             </ul>
             Aurora Team &copy; 2020-2021
           </div>
-          <div class="d-none d-md-block col-2 text-right">
+          <div class="d-none d-md-block col-3 col-lg-2 text-right">
             by <a href="https://jocat.ru" target="_blank">JCat</a> as<br />
             <a href="https://aurora-team.ru" target="_blank">Aurora Team</a>
           </div>
