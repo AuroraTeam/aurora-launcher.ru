@@ -23,12 +23,12 @@ export default Vue.extend({
 
 В лаунчере имеется 2 набора команд:
 
-- Для скачивания клиентов с пользовательских зеркал: `downloadassets` и `downloadclient`
-- Для скачивания клиентов с зеркала Mojang: `downloadmojangassets` и `downloadmojangclient`
+- Для скачивания клиентов с пользовательских зеркал: `downloadassets mirror` и `downloadclient mirror`
+- Для скачивания клиентов с зеркала Mojang: `downloadassets mojang` и `downloadclient mojang`
 
 Для этого вам нужно выбрать версию и методом последовательного ввода команд, скачать себе нужные файлы.  
 Например вы хотите скачать клиент версии 1.12.2 с официального зеркала Mojang.  
 Для этого вам нужно загрузить ассеты и клиент с помошью команд:  
-`downloadmojangassets 1.12.2 assets1.12.2`, где `assets1.12.2` название папки в которую сохранятся ассеты  
-`downloadmojangclient 1.12.2 TestClient`, где `TestClient` название папки в которую сохранится клиент
+`downloadassets mojang 1.12.2 assets1.12.2`, где `assets1.12.2` название папки в которую сохранятся ассеты  
+`downloadclient mojang 1.12.2 TestClient`, где `TestClient` название папки в которую сохранится клиент
 </template>
