@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header class="wiki-header" />
     <main class="d-flex">
       <LeftAside />
       <Nuxt />
@@ -56,16 +56,21 @@ aside
       &:focus
         outline: 0
 
+.wiki-header
+  margin: auto
+
+.wiki-header,
 section
-  width: calc(100vw - 440px)
+  width: calc(100% - 440px)
+  @media (max-width: 1024px)
+    width: 100%
+
+section
   min-height: calc(100vh - 70px)
-  padding: 2rem 3rem
   background-color: #fff
   color: #000
   padding: 15px 30px
   font-family: 'Rubik', sans-serif
-  @media (max-width: 1024px)
-    width: 100%
   a:hover
     color: #000
 .head

@@ -10,7 +10,7 @@
     </b-overlay>
     <video class="bgVideo" src="/background.mp4" muted autoplay loop></video>
     <div class="overlay"></div>
-    <Header />
+    <Header class="container" />
     <Nuxt />
   </div>
 </template>
