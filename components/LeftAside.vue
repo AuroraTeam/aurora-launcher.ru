@@ -1,25 +1,7 @@
 <template>
   <aside :class="showMenu ? 'open' : ''">
     <div class="menu">
-      <nuxt-link to="/wiki/0.1.0/getting-started">Базовая настройка</nuxt-link>
-      <ul>
-        <li>
-          <nuxt-link to="/wiki/0.1.0/getting-started/clients"
-            >Загрузка клиентов</nuxt-link
-          >
-        </li>
-      </ul>
-      <nuxt-link to="/wiki/0.1.0/for-developers">Для разработчиков</nuxt-link>
-      <ul>
-        <li>
-          <nuxt-link to="/wiki/0.1.0/for-developers/api">API</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/wiki/0.1.0/for-developers/mirrors"
-            >Альтернативные зеркала</nuxt-link
-          >
-        </li>
-      </ul>
+      <MenuElement v-for="el in menu" :key="el.link" :data="el" />
     </div>
     <button
       class="btn"
@@ -35,10 +17,42 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MenuElement } from './MenuElement.vue'
+
 export default Vue.extend({
   data() {
     return {
       showMenu: false,
+      menu: [
+        {
+          title: "Базовая настройка",
+          link: "/wiki/0.1.0/basic",
+          childrens: [
+            {
+              title: "Начало работы",
+              link: "/wiki/0.1.0/basic/introduction"
+            },
+            {
+              title: "Загрузка клиентов",
+              link: "/wiki/0.1.0/basic/clients"
+            }
+          ]
+        },
+        {
+          title: "Для разработчиков",
+          link: "/wiki/0.1.0/for-developers",
+          childrens: [
+            {
+              title: "API",
+              link: "/wiki/0.1.0/for-developers/api"
+            },
+            {
+              title: "Альтернативные зеркала",
+              link: "/wiki/0.1.0/for-developers/mirrors"
+            }
+          ]
+        }
+      ] as MenuElement[]
     }
   },
   methods: {

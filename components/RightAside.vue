@@ -1,6 +1,8 @@
 <template>
   <aside id="js__aside" class="second" :class="showMenu ? 'open' : ''">
-    <div class="menu"></div>
+    <div class="menu">
+      <MenuElement v-for="el in menu" :key="el.link" :data="el" />
+    </div>
     <button
       class="btn"
       data-side="right"
@@ -16,10 +18,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MenuElement } from './MenuElement.vue'
+
 export default Vue.extend({
   data() {
     return {
       showMenu: false,
+      menu: [] as MenuElement[]
     }
   },
   methods: {
