@@ -1,5 +1,13 @@
 <template>
   <div>
+    <b-overlay
+      :show="show"
+      bg-color="#000"
+      opacity="1"
+      :fixed="true"
+      :no-wrap="true"
+    >
+    </b-overlay>
     <Header class="wiki-header" />
     <main class="d-flex">
       <LeftAside />
@@ -12,7 +20,21 @@
 <script lang="ts">
 import 'highlight.js/styles/monokai.css'
 import Vue from 'vue'
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      show: true,
+    }
+  },
+  mounted() {
+    if (document.readyState === 'complete') {
+      this.show = false
+    }
+    window.onload = () => {
+      this.show = false
+    }
+  },
+})
 </script>
 
 <style lang="sass">

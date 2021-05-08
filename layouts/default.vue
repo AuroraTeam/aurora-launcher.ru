@@ -15,6 +15,25 @@
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      show: true,
+    }
+  },
+  mounted() {
+    if (document.readyState === 'complete') {
+      this.show = false
+    }
+    window.onload = () => {
+      this.show = false
+    }
+  },
+})
+</script>
+
 <style lang="sass">
 \:root
   --blue: #2575fc
@@ -53,21 +72,3 @@ a
   background: rgba(0, 0, 0, 0.4) url('/bg.png') fixed no-repeat
   z-index: -1
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      show: true,
-    }
-  },
-  mounted() {
-    if (document.readyState === 'complete') {
-      this.show = false
-    }
-    window.onload = () => {
-      this.show = false
-    }
-  },
-}
-</script>
