@@ -75,4 +75,8 @@ section
     color: #000
 .head
   font-weight: 300
+  margin-top: .5rem
+  margin-bottom: .5rem
+  +.lead
+    margin-bottom: 3rem
 </style>

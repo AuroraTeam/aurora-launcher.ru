@@ -11,4 +11,4 @@ export default Vue.extend({
 })
 </script>
 
-<template lang="md"></template>
+<template></template>

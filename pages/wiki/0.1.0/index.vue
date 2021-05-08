@@ -3,9 +3,9 @@ import Vue from 'vue'
 export default Vue.extend({
   layout: 'wiki',
   created() {
-    this.$router.replace('/wiki/0.1.0/getting-started')
+    this.$router.replace('/wiki/0.1.0/basic')
   },
 })
 </script>
 
-<template lang="md"></template>
+<template></template>
