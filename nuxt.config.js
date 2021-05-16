@@ -113,6 +113,10 @@ export default {
           'faStar',
           'faAngleLeft',
           'faAngleRight',
+          'faRocket',
+          'faServer',
+          'faCode',
+          'faCubes',
         ],
       },
       {

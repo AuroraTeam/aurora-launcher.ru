@@ -31,6 +31,30 @@
           </div>
           <div class="col-12 col-sm-6 col-lg-3 block">
             <div class="icon">
+              <font-awesome-icon icon="server" />
+            </div>
+            Возможность скачивания файлов через CDN
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="code" />
+            </div>
+            Открытый исходный код
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="rocket" />
+            </div>
+            Использование протокола WebSocket для обмена данными
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
+              <font-awesome-icon icon="cubes" />
+            </div>
+            Возможность расширения функцианала с помощью модулей
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 block">
+            <div class="icon">
               <font-awesome-icon icon="bomb" />
             </div>
             Отсутствие зависимости от Java и JavaFX
@@ -104,7 +128,7 @@ header
     color: #fff
 .dev-progress
   text-align: center
-  padding: 20px 15px
+  padding: 30px 15px
   strong
     font-size: 28px
 footer
