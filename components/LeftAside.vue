@@ -43,12 +43,20 @@ export default Vue.extend({
           link: "/wiki/0.1.0/for-developers",
           childrens: [
             {
+              title: "Альтернативные зеркала",
+              link: "/wiki/0.1.0/for-developers/mirrors"
+            },
+            {
+              title: "Продвинутая загрузка клиентов",
+              link: "/wiki/0.1.0/for-developers/clients"
+            },
+            {
               title: "API",
               link: "/wiki/0.1.0/for-developers/api"
             },
             {
-              title: "Альтернативные зеркала",
-              link: "/wiki/0.1.0/for-developers/mirrors"
+              title: "Список кодов ошибок",
+              link: "/wiki/0.1.0/for-developers/errors"
             }
           ]
         }

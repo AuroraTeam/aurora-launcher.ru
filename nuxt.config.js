@@ -135,7 +135,10 @@ export default {
       const tpl = '<pre><code class="hljs">{code}</code></pre>'
       if (lang && hljs.getLanguage(lang)) {
         try {
-          return tpl.replace('{code}', hljs.highlight(str, { language: lang, ignoreIllegals: true }).value)
+          return tpl.replace(
+            '{code}',
+            hljs.highlight(str, { language: lang, ignoreIllegals: true }).value
+          )
         } catch (_) {}
       }
       return tpl.replace('{code}', new MarkdownIt().utils.escapeHtml(str))
