@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import 'highlight.js/styles/monokai.css'
+import 'highlight.js/styles/base16/material-darker.css'
 import Vue from 'vue'
 export default Vue.extend({
   data() {
