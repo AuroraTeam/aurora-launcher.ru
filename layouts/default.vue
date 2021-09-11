@@ -6,10 +6,7 @@
       opacity="1"
       :fixed="true"
       :no-wrap="true"
-    >
-    </b-overlay>
-    <video class="bgVideo" src="/background.mp4" muted autoplay loop></video>
-    <div class="overlay"></div>
+    />
     <Header class="container" />
     <Nuxt />
   </div>
@@ -46,29 +43,16 @@ html
 
 body
   margin: 0
-  height: 100vh
+  min-height: 100vh
   display: flex
   flex-direction: column
-  background: #1a1a1a
   font-family: 'Comfortaa', sans-serif
   color: #fff
+  background: #181818 url('/bg.png') no-repeat
 
 a
   color: var(--blue)
   &:hover
     color: #fff
     text-decoration: none
-
-.bgVideo
-  position: fixed
-  width: 100vw
-  height: 100vh
-  object-fit: cover
-  z-index: -2
-.overlay
-  position: fixed
-  width: 100vw
-  height: 100vh
-  background: rgba(0, 0, 0, 0.4) url('/bg.png') fixed no-repeat
-  z-index: -1
 </style>

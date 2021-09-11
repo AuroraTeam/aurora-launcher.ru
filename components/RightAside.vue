@@ -24,7 +24,7 @@ export default Vue.extend({
   data() {
     return {
       showMenu: false,
-      menu: [] as MenuElement[]
+      menu: [] as MenuElement[],
     }
   },
   methods: {

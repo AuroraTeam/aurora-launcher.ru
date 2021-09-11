@@ -39,7 +39,8 @@ export default Vue.extend({
 
 <style lang="sass">
 aside
-  width: 220px
+  font-family: 'Rubik', sans-serif
+  width: 260px
   min-height: calc(100vh - 70px)
   background-color: #fafafa
   @media (max-width: 1024px)
@@ -52,13 +53,13 @@ aside
       list-style: none
       padding-left: 10px
     li a
-      font-size: 14px
+      font-size: 16px
       color: #888
       &.active
         color: #555
     a
       color: #555
-      font-size: 16px
+      font-size: 18px
       text-decoration: none
       display: block
       &.active
@@ -83,7 +84,7 @@ aside
 
 .wiki-header,
 section
-  width: calc(100% - 440px)
+  width: calc(100% - 520px)
   @media (max-width: 1024px)
     width: 100%
 

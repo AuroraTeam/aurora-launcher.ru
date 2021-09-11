@@ -25,42 +25,42 @@ export default Vue.extend({
       showMenu: false,
       menu: [
         {
-          title: "Базовая настройка",
-          link: "/wiki/0.1.0/basic",
+          title: 'Базовая настройка',
+          link: '/wiki/0.1.0/basic',
           childrens: [
             {
-              title: "Начало работы",
-              link: "/wiki/0.1.0/basic/introduction"
+              title: 'Начало работы',
+              link: '/wiki/0.1.0/basic/introduction',
             },
             {
-              title: "Загрузка клиентов",
-              link: "/wiki/0.1.0/basic/clients"
-            }
-          ]
+              title: 'Загрузка клиентов',
+              link: '/wiki/0.1.0/basic/clients',
+            },
+          ],
         },
         {
-          title: "Для разработчиков",
-          link: "/wiki/0.1.0/for-developers",
+          title: 'Для разработчиков',
+          link: '/wiki/0.1.0/for-developers',
           childrens: [
             {
-              title: "Альтернативные зеркала",
-              link: "/wiki/0.1.0/for-developers/mirrors"
+              title: 'Альтернативные зеркала',
+              link: '/wiki/0.1.0/for-developers/mirrors',
             },
             {
-              title: "Продвинутая загрузка клиентов",
-              link: "/wiki/0.1.0/for-developers/clients"
+              title: 'Продвинутая загрузка клиентов',
+              link: '/wiki/0.1.0/for-developers/clients',
             },
             {
-              title: "API",
-              link: "/wiki/0.1.0/for-developers/api"
+              title: 'API',
+              link: '/wiki/0.1.0/for-developers/api',
             },
             {
-              title: "Список кодов ошибок",
-              link: "/wiki/0.1.0/for-developers/errors"
-            }
-          ]
-        }
-      ] as MenuElement[]
+              title: 'Список кодов ошибок',
+              link: '/wiki/0.1.0/for-developers/errors',
+            },
+          ],
+        },
+      ] as MenuElement[],
     }
   },
   methods: {
