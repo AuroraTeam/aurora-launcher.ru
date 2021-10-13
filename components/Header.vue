@@ -5,7 +5,10 @@
     </nuxt-link>
     <nav>
       <nuxt-link to="/roadmap">Дорожная карта</nuxt-link>
-      <nuxt-link to="/wiki">База знаний</nuxt-link>
+      <a target="_blank" href="https://docs.aurora-launcher.ru/"
+        >Документация</a
+      >
+      <nuxt-link class="btn btn-primary" to="/download">Скачать</nuxt-link>
     </nav>
   </header>
 </template>
@@ -24,6 +27,6 @@ header
     a
       color: #fff
       margin-left: 10px
-      &:hover
+      &:not(.btn):hover
         color: var(--blue)
 </style>

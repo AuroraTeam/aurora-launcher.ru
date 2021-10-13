@@ -8,7 +8,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  props: ['hide']
+  props: ['hide'],
 })
 </script>
 
@@ -23,6 +23,6 @@ img
   height: 50px
   margin-right: 10px
 .logo-text
-  @media (max-width: 767px)
+  @media (max-width: 991px)
     display: none
 </style>
