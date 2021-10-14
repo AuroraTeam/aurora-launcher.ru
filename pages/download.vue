@@ -20,28 +20,24 @@
         </div>
         <div class="links">
           <a
-            download
             v-if="version.files.js"
             :href="version.files.js"
             class="btn btn-primary"
             >JS</a
           >
           <a
-            download
             v-if="version.files['binary-win']"
             :href="version.files['binary-win']"
             class="btn btn-primary"
             >Windows</a
           >
           <a
-            download
             v-if="version.files['binary-linux']"
             :href="version.files['binary-linux']"
             class="btn btn-primary"
             >Linux</a
           >
           <a
-            download
             v-if="version.files['binary-mac']"
             :href="version.files['binary-mac']"
             class="btn btn-primary"
