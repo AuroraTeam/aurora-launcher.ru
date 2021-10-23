@@ -1,109 +1,76 @@
 <template>
-  <div>
-    <main>
-      <div class="container">
-        <header class="row">
-          <div class="col-12 col-md-5 col-lg-6 lead">
-            <h1>Aurora Launcher</h1>
-            <p>
-              Лаунчер с удобной кастомизацией дизайна для игровых проектов
-              Minecraft
-            </p>
-          </div>
-          <div class="d-none d-md-block col-md-7 col-lg-6">
-            <img class="img-fluid" src="/launcher.jpg" alt="" />
-          </div>
-        </header>
+  <main>
+    <header class="row">
+      <div class="col-12 col-md-5 col-lg-6 lead">
+        <h1>Aurora Launcher</h1>
+        <p>
+          Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft
+        </p>
       </div>
-      <div class="container">
-        <div class="row advantages">
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="palette" />
-            </div>
-            Легкая и удобная кастомизация интерфейса
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="book" />
-            </div>
-            Понятная документация, адекватный вывод ошибок
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="server" />
-            </div>
-            Возможность скачивания файлов через CDN
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="code" />
-            </div>
-            Открытый исходный код
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="rocket" />
-            </div>
-            Использование протокола WebSocket для обмена данными
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="cubes" />
-            </div>
-            Возможность расширения функцианала с помощью модулей
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="bomb" />
-            </div>
-            Отсутствие зависимости от Java и JavaFX
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3 block">
-            <div class="icon">
-              <font-awesome-icon icon="star" />
-            </div>
-            И многое другое
-          </div>
+      <div class="d-none d-md-block col-md-7 col-lg-6">
+        <img class="img-fluid" src="/launcher.jpg" alt="" />
+      </div>
+    </header>
+    <div class="row advantages">
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="palette" />
         </div>
+        Легкая и удобная кастомизация интерфейса
       </div>
-      <div class="container dev-progress">
-        <strong>Прогресс разработки:</strong>
-        <p>Aurora Launcher v0.1.0 is 50% complete</p>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-3 col-sm-2 col-lg-1">
-            <Logo hide="true" />
-          </div>
-          <div class="col-9 col-sm-10 col-md-7 col-lg-9">
-            <ul class="list-inline m-0">
-              <li class="list-inline-item">
-                <a target="_blank" href="https://github.com/AuroraTeam"
-                  >GitHub</a
-                >
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="https://discord.gg/2NvYTcv">Discord</a>
-              </li>
-            </ul>
-            Aurora Team &copy; 2020-2021
-          </div>
-          <div class="d-none d-md-block col-3 col-lg-2 text-right">
-            by <a href="https://jocat.ru" target="_blank">JCat</a> as<br />
-            <a href="https://aurora-team.ru" target="_blank">Aurora Team</a>
-          </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="book" />
         </div>
+        Понятная документация, адекватный вывод ошибок
       </div>
-    </footer>
-  </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="server" />
+        </div>
+        Возможность скачивания файлов через CDN
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="code" />
+        </div>
+        Открытый исходный код
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="rocket" />
+        </div>
+        Использование протокола WebSocket для обмена данными
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="cubes" />
+        </div>
+        Возможность расширения функцианала с помощью модулей
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="bomb" />
+        </div>
+        Отсутствие зависимости от Java и JavaFX
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 block">
+        <div class="icon">
+          <font-awesome-icon icon="star" />
+        </div>
+        И многое другое
+      </div>
+    </div>
+    <div class="dev-progress">
+      <strong>Прогресс разработки:</strong>
+      <p>Aurora Launcher v0.1.0 is 50% complete</p>
+    </div>
+  </main>
 </template>
 
 <style lang="sass" scoped>
 header
-  padding: 50px 0
+  padding: 120px 0
   .lead
     padding-right: 50px
     display: flex
@@ -112,25 +79,25 @@ header
   img
     border-radius: 10px
 .advantages
-  padding: 80px 0 20px
+  padding: 50px 0 20px
   font-size: 15px
   .block
     text-align: center
     margin-bottom: 80px
+    font-weight: 300
   .icon
     font-size: 32px
     margin: auto
     margin-bottom: 20px
     width: 72px
     line-height: 72px
-    border-radius: 50%
+    border-radius: 20px
     background-color: #7c4dff
     color: #fff
+    // box-shadow: 6px -6px 2px 0px rgb(124 77 255 / 50%), 12px -12px 2px 0px rgb(124 77 255 / 25%)
 .dev-progress
   text-align: center
-  padding: 30px 15px
+  padding: 80px 0
   strong
     font-size: 28px
-footer
-  padding: 30px 0
 </style>

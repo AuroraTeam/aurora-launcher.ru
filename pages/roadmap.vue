@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main>
     <h1 class="text-center my-3">Дорожная карта</h1>
     <p class="text-center mb-5">
       Внимание! На данный момент все даты указаны приблизительно и могут
@@ -30,10 +30,14 @@
         </p>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <style scoped>
+main {
+  margin: 100px 0;
+}
+
 .timeline {
   border-left: 3px solid #7c4dff;
   border-bottom-right-radius: 4px;

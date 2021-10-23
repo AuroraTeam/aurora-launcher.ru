@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <b-overlay
       :show="show"
       bg-color="#000"
@@ -7,8 +7,9 @@
       :fixed="true"
       :no-wrap="true"
     />
-    <Header class="container" />
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -55,4 +56,7 @@ a
   &:hover
     color: #fff
     text-decoration: none
+
+.btn
+  border-radius: 19px
 </style>

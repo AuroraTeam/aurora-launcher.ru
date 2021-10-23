@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main>
     <h1 class="text-center my-3">Скачать лаунчер</h1>
     <p class="text-center mb-5">
       <span class="danger">Внимание!</span><br />
@@ -46,10 +46,15 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style lang="scss" scoped>
+main {
+  margin: 100px 0;
+  min-height: calc(100vh - 360px);
+}
+
 .danger {
   color: var(--danger);
   font-size: 22px;

@@ -15,7 +15,7 @@
 
 <style lang="sass" scoped>
 header
-  padding: 10px 15px
+  padding: 15px 0
   display: flex
   align-items: center
   justify-content: space-between
@@ -26,7 +26,7 @@ header
       text-align: right
     a
       color: #fff
-      margin-left: 10px
+      margin-left: 15px
       &:not(.btn):hover
         color: var(--blue)
 </style>
