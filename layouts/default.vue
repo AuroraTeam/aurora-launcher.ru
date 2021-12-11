@@ -51,7 +51,7 @@ body
   color: #fff
   background: url('/bg.png') no-repeat, #111 url('/ny_bg.png')
   // background: #181818 url('/bg.png') no-repeat
-
+  background-size: auto, 100%
 a
   color: var(--blue)
   &:hover
