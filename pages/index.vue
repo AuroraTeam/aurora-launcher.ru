@@ -46,7 +46,7 @@
         <div class="icon">
           <font-awesome-icon icon="cubes" />
         </div>
-        Возможность расширения функцианала с помощью модулей
+        Возможность расширения функционала с помощью модулей
       </div>
       <div class="col-12 col-sm-6 col-lg-3 block">
         <div class="icon">
