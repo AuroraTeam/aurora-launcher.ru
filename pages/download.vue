@@ -102,7 +102,7 @@ export default Vue.extend({
     }
   },
   async mounted() {
-    const request = await fetch('https://api.aurora-launcher.ru/versions.json')
+    const request = await fetch('https://api.aurora-launcher.ru/versions')
     const data = await request.json()
     this.versionsList = data.versions
   },
