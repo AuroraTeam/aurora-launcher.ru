@@ -28,5 +28,5 @@ header
       color: #fff
       margin-left: 15px
       &:not(.btn):hover
-        color: var(--blue)
+        color: var(--primary)
 </style>

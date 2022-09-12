@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="d-none d-md-block col-md-7 col-lg-6">
-        <img class="img-fluid" src="/launcher.jpg" alt="" />
+        <img class="img-fluid" src="/launcher.png" alt="" />
       </div>
     </header>
     <div class="row advantages">
@@ -63,7 +63,7 @@
     </div>
     <div class="dev-progress">
       <strong>Прогресс разработки:</strong>
-      <p>Aurora Launcher v0.1.0 is 50% complete</p>
+      <p>Aurora Launcher v0.1.0 is 60% complete</p>
     </div>
   </main>
 </template>
@@ -92,7 +92,7 @@ header
     width: 72px
     line-height: 72px
     border-radius: 20px
-    background-color: #7c4dff
+    background-color: var(--primary)
     color: #fff
     // box-shadow: 6px -6px 2px 0px rgb(124 77 255 / 50%), 12px -12px 2px 0px rgb(124 77 255 / 25%)
 .dev-progress

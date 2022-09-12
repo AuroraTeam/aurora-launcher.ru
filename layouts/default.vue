@@ -34,7 +34,7 @@ export default Vue.extend({
 
 <style lang="sass">
 \:root
-  --blue: #2575fc
+  --primary: #007bff
 
 *
   box-sizing: border-box
@@ -49,12 +49,11 @@ body
   flex-direction: column
   font-family: 'Comfortaa', sans-serif
   color: #fff
-  // background: url('/bg.png') no-repeat, #111 url('/ny_bg.png')
-  background: #181818 url('/bg.png') no-repeat
-  // background-size: auto, 100%
-  background-size: auto
+  // background: #111 url('/ny_bg.png')
+  // background-size: 100%
+  background: #181818
 a
-  color: var(--blue)
+  color: var(--primary)
   &:hover
     color: #fff
     text-decoration: none
