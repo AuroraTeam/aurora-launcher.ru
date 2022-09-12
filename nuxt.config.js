@@ -1,6 +1,3 @@
-import hljs from 'highlight.js'
-import MarkdownIt from 'markdown-it'
-
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -84,7 +81,6 @@ export default {
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
     'nuxt-fontawesome',
-    '@nuxtjs/markdownit',
     [
       '@nuxtjs/yandex-metrika',
       {
@@ -122,22 +118,6 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
-
-  markdownit: {
-    use: ['markdown-it-attrs'],
-    highlight(str, lang) {
-      const tpl = '<pre><code class="hljs">{code}</code></pre>'
-      if (lang && hljs.getLanguage(lang)) {
-        try {
-          return tpl.replace(
-            '{code}',
-            hljs.highlight(str, { language: lang, ignoreIllegals: true }).value
-          )
-        } catch (_) {}
-      }
-      return tpl.replace('{code}', new MarkdownIt().utils.escapeHtml(str))
-    },
-  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
