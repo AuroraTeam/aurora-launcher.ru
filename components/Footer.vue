@@ -12,7 +12,7 @@
           <a target="_blank" href="https://discord.gg/2NvYTcv">Discord</a>
         </li>
       </ul>
-      Aurora Team &copy; 2020-2022
+      Aurora Team &copy; 2020-{{ new Date().getFullYear() }}
     </div>
     <div class="d-none d-md-block col-3 col-lg-2 text-right">
       by <a href="https://jocat.ru" target="_blank">JCat</a> as<br />

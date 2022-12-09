@@ -49,9 +49,9 @@ body
   flex-direction: column
   font-family: 'Comfortaa', sans-serif
   color: #fff
-  // background: #111 url('/ny_bg.png')
-  // background-size: 100%
-  background: #181818
+  background: #111 url('/ny_bg.png')
+  background-size: 100%
+  // background: #181818
 a
   color: var(--primary)
   &:hover
