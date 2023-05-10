@@ -4,7 +4,6 @@
       <Logo />
     </nuxt-link>
     <nav>
-      <nuxt-link to="/roadmap">Дорожная карта</nuxt-link>
       <a target="_blank" href="https://docs.aurora-launcher.ru/"
         >Документация</a
       >
