@@ -1,13 +1,13 @@
 <template>
   <header>
-    <nuxt-link to="/">
+    <NuxtLink to="/">
       <Logo />
-    </nuxt-link>
+    </NuxtLink>
     <nav>
       <a target="_blank" href="https://docs.aurora-launcher.ru/"
         >Документация</a
       >
-      <nuxt-link class="btn btn-primary" to="/download">Скачать</nuxt-link>
+      <NuxtLink class="btn" to="/download">Скачать</NuxtLink>
     </nav>
   </header>
 </template>
@@ -22,7 +22,8 @@ header
     @media (max-width: 575px)
       display: flex
       flex-direction: column
-      text-align: right
+      align-items: flex-end
+      gap: 10px
     a
       color: #fff
       margin-left: 15px

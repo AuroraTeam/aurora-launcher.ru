@@ -1,63 +1,53 @@
 <template>
   <div class="container">
-    <b-overlay
-      :show="show"
-      bg-color="#000"
-      opacity="1"
-      :fixed="true"
-      :no-wrap="true"
-    />
     <Header />
-    <Nuxt />
+    <slot />
     <Footer />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data() {
-    return {
-      show: true,
-    }
-  },
-  mounted() {
-    if (document.readyState === 'complete') {
-      this.show = false
-    }
-    window.onload = () => {
-      this.show = false
-    }
-  },
-})
-</script>
-
 <style lang="sass">
-\:root
-  --primary: #007bff
+@import 'modern-normalize/modern-normalize.css'
 
-*
-  box-sizing: border-box
+:root
+  --primary: #007bff
+  --primary-hover: #1d4ed8
+  --danger: #dc3545
 
 html
   scroll-behavior: smooth
 
 body
-  margin: 0
   min-height: 100vh
   display: flex
   flex-direction: column
   font-family: 'Comfortaa', sans-serif
   color: #fff
-  // background: #111 url('/ny_bg.png')
-  // background-size: 100%
   background: #181818
 a
   color: var(--primary)
+  text-decoration: none
   &:hover
     color: #fff
-    text-decoration: none
+
+img
+  max-width: 100%
+
+h1
+    font-size: 2.5rem
+    font-weight: 500
+
+.container
+  max-width: 1140px
+  margin: auto
+  padding: 0 15px
 
 .btn
-  border-radius: 19px
+  color: #fff
+  background-color: var(--primary)
+  padding: 10px 14px
+  border-radius: 20px
+  transition-duration: 0.1s
+  &:hover
+    background-color: var(--primary-hover)
 </style>

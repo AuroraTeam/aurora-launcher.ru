@@ -1,16 +1,22 @@
 <template>
   <main>
-    <h1 class="text-center my-3">Скачать лаунчер</h1>
-    <p class="text-center mb-5">
-      <span class="danger">Внимание!</span><br />
-      Перечисленные ниже версии предназначены для тестирования/ознакомления.<br />
+    <h1>Скачать лаунчер</h1>
+    <div class="dev-info">
+      <span class="danger">Внимание!</span>
+      <p>
+        Перечисленные ниже версии предназначены для тестирования/ознакомления.
+      </p>
       <span class="danger">Они не пригодны для работы в продакшене!!!</span>
-    </p>
-    <p class="text-center" v-if="versionsList.length === 0">
+    </div>
+    <p class="text-center danger" v-if="!versionsData">
       Ошибка получения списка версий
     </p>
     <div class="list" v-else>
-      <div class="version-block" v-for="(version, i) in versionsList" :key="i">
+      <div
+        class="version-block"
+        v-for="(version, i) in versionsData.versions"
+        :key="i"
+      >
         <div class="info">
           <span>AuroraLauncher v{{ version.version }}</span>
           <span class="dash">–</span>
@@ -49,10 +55,55 @@
   </main>
 </template>
 
+<script setup lang="ts">
+useSeoMeta({
+  title: "Скачать лаунчер",
+});
+
+const { data: versionsData } = await useFetch<VersionsData>(
+  "https://api.aurora-launcher.ru/versions"
+);
+
+interface VersionsData {
+  stable: string;
+  latest: string;
+  dev: string;
+  versions: Version[];
+}
+
+interface Version {
+  version: string;
+  date: Date;
+  note: string;
+  files: Files;
+  _link: string;
+}
+
+interface Files {
+  js: string;
+  "binary-win": string;
+  "binary-mac": string;
+  "binary-linux": string;
+}
+</script>
+
 <style lang="scss" scoped>
 main {
   margin: 100px 0;
   min-height: calc(100vh - 360px);
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.dev-info {
+  text-align: center;
+  margin-bottom: 3rem;
+  p {
+    margin: 0.5rem 0;
+  }
 }
 
 .danger {
@@ -81,30 +132,18 @@ main {
     }
   }
   .dash {
-    margin: 0 8px;
+    margin: 0 10px;
   }
   .links {
     margin-left: auto;
     .btn {
-      margin: 8px 5px;
-      padding: 6px 18px;
+      display: inline-block;
+      margin: 5px;
     }
   }
 }
-</style>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data() {
-    return {
-      versionsList: [],
-    }
-  },
-  async mounted() {
-    const request = await fetch('https://api.aurora-launcher.ru/versions')
-    const data = await request.json()
-    this.versionsList = data.versions
-  },
-})
-</script>
+.text-center {
+  text-align: center;
+}
+</style>

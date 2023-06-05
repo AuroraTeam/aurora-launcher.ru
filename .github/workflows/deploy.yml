@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Cache node_modules
         uses: actions/cache@v2
@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Generating the site
         run: npm run generate
@@ -43,13 +43,13 @@ jobs:
             rm -rf *
 
       - name: Deploying the site
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.SSH_SERVER_IP }}
           REMOTE_USER: ${{ secrets.SSH_USER }}
           REMOTE_PORT: ${{ secrets.SSH_SERVER_PORT }}
-          SOURCE: 'dist/'
+          SOURCE: "dist/"
           TARGET: ${{ secrets.SITE_DIR }}
 
       - name: Clearing the Cloudflare cache
