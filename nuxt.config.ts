@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         { src: "/snow/snowfall.jquery.min.js" },
         {
           innerHTML:
-            "$(document).ready(function(){$(document).snowfall({flakeCount:100});});",
+            '$(document).ready(function(){$(document).snowfall(),new ResizeObserver(()=>{$(document).snowfall("clear"),$(document).snowfall()}).observe(document.body)});',
         },
       ],
     },
