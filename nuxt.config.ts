@@ -48,16 +48,7 @@ export default defineNuxtConfig({
         },
         { rel: "shortcut icon", href: "/favicons/favicon.ico" },
       ],
-      script: [
-        {
-          src: "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
-        },
-        { src: "/snow/snowfall.jquery.min.js" },
-        {
-          innerHTML:
-            '$(document).ready(function(){$(document).snowfall(),new ResizeObserver(()=>{$(document).snowfall("clear"),$(document).snowfall()}).observe(document.body)});',
-        },
-      ],
+      script: [{ src: "https://jocat.ru/js/snow.min.js" }],
     },
   },
 
