@@ -48,7 +48,9 @@ export default defineNuxtConfig({
         },
         { rel: "shortcut icon", href: "/favicons/favicon.ico" },
       ],
-      script: [{ src: "https://jocat.ru/js/snow.min.js" }],
+      script: [
+        { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
+      ],
     },
   },
 
