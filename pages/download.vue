@@ -8,7 +8,8 @@
       </p>
       <span class="danger">Они не пригодны для работы в продакшене!!!</span>
     </div>
-    <p class="text-center danger" v-if="!versionsData">
+    <p class="text-center" v-if="pending">Загрузка...</p>
+    <p class="text-center danger" v-else-if="!versionsData">
       Ошибка получения списка версий
     </p>
     <div class="list" v-else>
@@ -61,9 +62,9 @@ useSeoMeta({
   title: "Скачать лаунчер",
 });
 
-const { data: versionsData } = await useFetch<VersionsData>(
+const { data: versionsData, pending } = await useFetch<VersionsData>(
   "https://api.aurora-launcher.ru/versions",
-  { server: false }
+  { server: false, lazy: true }
 );
 
 interface VersionsData {
