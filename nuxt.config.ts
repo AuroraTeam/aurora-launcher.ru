@@ -33,10 +33,6 @@ export default defineNuxtConfig({
           href: "/favicons/icon.svg",
         },
         { rel: "manifest", href: "/favicons/manifest.webmanifest" },
-        {
-          rel: "yandex-tableau-widget",
-          href: "/favicons/tableau.json",
-        },
       ],
       // script: [
       //   { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
