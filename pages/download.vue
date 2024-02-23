@@ -62,7 +62,8 @@ useSeoMeta({
 });
 
 const { data: versionsData } = await useFetch<VersionsData>(
-  "https://api.aurora-launcher.ru/versions"
+  "https://api.aurora-launcher.ru/versions",
+  { server: false }
 );
 
 interface VersionsData {
