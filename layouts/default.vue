@@ -10,8 +10,8 @@
 @import 'modern-normalize/modern-normalize.css'
 
 :root
-  --primary: rgb(170, 0, 228)
-  --primary-hover: rgb(122, 0, 166)
+  --primary: rgb(0, 128, 255)
+  --primary-hover: rgb(0, 96, 192)
   --danger: #dc3545
 
 html

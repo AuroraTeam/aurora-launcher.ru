@@ -18,11 +18,12 @@
         :key="i"
       >
         <div class="info">
-          <span>AuroraLauncher v{{ version.version }}</span>
+          <span>AuroraLauncher {{ version.version }}</span>
           <span class="dash">–</span>
           <span class="date"
             >Дата релиза: {{ new Date(version.date).toLocaleString() }}</span
           >
+          <span v-if="version.dev" class="dev">dev</span>
         </div>
         <div class="links">
           <a
@@ -66,7 +67,6 @@ const { data: versionsData } = await useFetch<VersionsData>(
 
 interface VersionsData {
   stable: string;
-  latest: string;
   dev: string;
   versions: Version[];
 }
@@ -75,8 +75,8 @@ interface Version {
   version: string;
   date: Date;
   note: string;
+  dev: boolean;
   files: Files;
-  _link: string;
 }
 
 interface Files {
@@ -145,5 +145,14 @@ h1 {
 
 .text-center {
   text-align: center;
+}
+
+.dev {
+  display: inline-block;
+  background-color: var(--danger);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 </style>

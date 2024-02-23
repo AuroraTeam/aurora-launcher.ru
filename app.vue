@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 useHead({
-  titleTemplate: (titleChunk: string) => {
+  titleTemplate: (titleChunk?: string) => {
     return titleChunk ? `${titleChunk} - Aurora Launcher` : "Aurora Launcher";
   },
 });

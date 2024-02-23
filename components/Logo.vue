@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img class="img-fluid" src="/logo.png" alt="" />
+    <img class="img-fluid" src="/logo.svg" alt="" />
     <span v-if="!hide" class="logo-text">Aurora Launcher</span>
   </div>
 </template>
@@ -18,7 +18,6 @@ defineProps<{
   font-size: 22px
   color: #fff
 img
-  filter: contrast(0) brightness(2)
   height: 50px
   margin-right: 10px
 .logo-text

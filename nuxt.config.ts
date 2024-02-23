@@ -13,40 +13,30 @@ export default defineNuxtConfig({
             "Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft",
         },
         // Icons
-        { name: "msapplication-TileColor", content: "#2d89ef" },
-        {
-          name: "msapplication-config",
-          content: "/favicons/browserconfig.xml",
-        },
-        { name: "theme-color", content: "#ffffff" },
+        { name: "theme-color", content: "#0080FF" },
         { name: "og:image", content: "/logo.png" },
       ],
       link: [
         // Icons
         {
           rel: "apple-touch-icon",
-          sizes: "180x180",
           href: "/favicons/apple-touch-icon.png",
         },
         {
           rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: "/favicons/favicon-32x32.png",
+          sizes: "any",
+          href: "/favicons/favicon.ico",
         },
         {
           rel: "icon",
-          type: "image/png",
-          sizes: "16x16",
-          href: "/favicons/favicon-16x16.png",
+          type: "image/svg+xml",
+          href: "/favicons/icon.svg",
         },
-        { rel: "manifest", href: "/favicons/site.webmanifest" },
+        { rel: "manifest", href: "/favicons/manifest.webmanifest" },
         {
-          rel: "mask-icon",
-          href: "/favicons/safari-pinned-tab.svg",
-          color: "#5bbad5",
+          rel: "yandex-tableau-widget",
+          href: "/favicons/tableau.json",
         },
-        { rel: "shortcut icon", href: "/favicons/favicon.ico" },
       ],
       // script: [
       //   { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
