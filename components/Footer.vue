@@ -14,6 +14,12 @@
         rel="noopener noreferrer"
         >Discord</a
       >
+      <a
+        href="https://www.youtube.com/@AuroraTeamRu"
+        target="_blank"
+        rel="noopener noreferrer"
+        >YouTube</a
+      >
       <p>Aurora Team &copy; 2020-{{ new Date().getFullYear() }}</p>
     </div>
     <div class="copyrights">
