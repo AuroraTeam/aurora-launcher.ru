@@ -26,33 +26,9 @@
       </div>
       <div class="block">
         <div class="icon-block">
-          <Icon name="fa6-solid:server" />
-        </div>
-        Возможность скачивания файлов через CDN
-      </div>
-      <div class="block">
-        <div class="icon-block">
           <Icon name="fa6-solid:code" />
         </div>
         Открытый исходный код
-      </div>
-      <div class="block">
-        <div class="icon-block">
-          <Icon name="fa6-solid:rocket" />
-        </div>
-        Использование протокола WebSocket для обмена данными
-      </div>
-      <div class="block">
-        <div class="icon-block">
-          <Icon name="fa6-solid:cubes" />
-        </div>
-        Возможность расширения функционала с помощью модулей
-      </div>
-      <div class="block">
-        <div class="icon-block">
-          <Icon name="fa6-solid:bomb" />
-        </div>
-        Отсутствие зависимости от Java и JavaFX
       </div>
       <div class="block">
         <div class="icon-block">
@@ -63,7 +39,7 @@
     </div>
     <div class="dev-progress">
       <strong>Прогресс разработки:</strong>
-      <p>Aurora Launcher v0.1.0 is 80% complete</p>
+      <p>Aurora Launcher v0.1.0 is 82% complete</p>
     </div>
   </main>
 </template>
