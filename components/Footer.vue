@@ -8,6 +8,9 @@
       <a href="https://discord.gg/2NvYTcv" target="_blank" rel="noopener"
         >Discord</a
       >
+      <a href="https://t.me/aurora_team_tg" target="_blank" rel="noopener"
+        >Telegram</a
+      >
       <a
         href="https://www.youtube.com/@AuroraTeamRu"
         target="_blank"
