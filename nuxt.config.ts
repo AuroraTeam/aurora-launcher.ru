@@ -35,9 +35,9 @@ export default defineNuxtConfig({
         },
         { rel: "manifest", href: "/favicons/manifest.webmanifest" },
       ],
-      script: [
-        { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
-      ],
+      // script: [
+      //   { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
+      // ],
     },
   },
 
