@@ -13,17 +13,9 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 26
-
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: npm i
@@ -49,7 +41,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SSH_SERVER_IP }}
           REMOTE_USER: ${{ secrets.SSH_USER }}
           REMOTE_PORT: ${{ secrets.SSH_SERVER_PORT }}
-          SOURCE: "dist/"
+          SOURCE: ".output/public/"
           TARGET: ${{ secrets.SITE_DIR }}
 
       - name: Clearing the Cloudflare cache
