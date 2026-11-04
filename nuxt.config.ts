@@ -8,10 +8,8 @@ export default defineNuxtConfig({
       },
       meta: [
         {
-          hid: "description",
           name: "description",
-          content:
-            "Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft",
+          content: "Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft",
         },
         // Icons
         { name: "theme-color", content: "#0080FF" },
@@ -41,18 +39,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    "@nuxtjs/google-fonts",
-    "@artmizu/yandex-metrika-nuxt",
-    "nuxt-icon",
-  ],
-
-  googleFonts: {
-    families: {
-      Comfortaa: [300, 400, 500, 700],
-    },
-  },
-  yandexMetrika: {
-    id: "68187730",
-  },
+  modules: ["@nuxt/fonts", "@nuxt/icon/module"],
 });

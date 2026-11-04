@@ -1,6 +1,7 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,16 +9,20 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.0.1",
-    "@types/node": "^20.11.20",
-    "nuxt": "^3.5.2",
-    "nuxt-icon": "^0.6.8"
-  },
   "dependencies": {
-    "@artmizu/yandex-metrika-nuxt": "^1.0.1",
-    "consola": "^3.2.3",
+    "@nuxt/fonts": "^1.2.0",
     "modern-normalize": "^3.0.1",
     "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@nuxt/icon": "^2.6.2",
+    "@types/node": "^26.6.6",
+    "nuxt": "^4.6.4"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.25.5": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
   }
 }
