@@ -8,12 +8,24 @@ export default defineNuxtConfig({
       },
       meta: [
         {
+          name: "og:title",
+          content: "Aurora Launcher",
+        },
+        {
           name: "description",
           content: "Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft",
         },
+        {
+          name: "og:description",
+          content: "Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft",
+        },
+        {
+          name: "og:url",
+          content: "https://aurora-launcher.ru/",
+        },
         // Icons
         { name: "theme-color", content: "#0080FF" },
-        { name: "og:image", content: "/logo.png" },
+        { name: "og:image", content: "/logo_wide.png" },
       ],
       link: [
         // Icons

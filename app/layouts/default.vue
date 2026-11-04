@@ -10,7 +10,7 @@
 @import 'modern-normalize/modern-normalize.css'
 
 :root
-  --primary: rgb(0, 128, 255)
+  --primary: rgb(80, 128, 255)
   --primary-hover: rgb(0, 96, 192)
   --danger: #dc3545
 
@@ -24,6 +24,11 @@ body
   font-family: 'Comfortaa', sans-serif
   color: #fff
   background: #181818
+  background-image: linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px)
+  background-size: 30px 30px
+  // background-image: radial-gradient(circle, #222 1px, transparent 2px)
+  // background-size: 30px 30px
+
 a
   color: var(--primary)
   text-decoration: none

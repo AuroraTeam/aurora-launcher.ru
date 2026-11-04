@@ -3,36 +3,21 @@
     <h1>Скачать лаунчер</h1>
     <div class="dev-info">
       <span class="danger">Внимание!</span>
-      <p>
-        Перечисленные ниже версии предназначены для тестирования/ознакомления.
-      </p>
+      <p>Перечисленные ниже версии предназначены для тестирования/ознакомления.</p>
       <span class="danger">Они не пригодны для работы в продакшене!!!</span>
     </div>
-    <p class="text-center" v-if="pending">Загрузка...</p>
-    <p class="text-center danger" v-else-if="!versionsData">
-      Ошибка получения списка версий
-    </p>
+    <p class="text-center" v-if="status === 'pending'">Загрузка...</p>
+    <p class="text-center danger" v-else-if="!versionsData">Ошибка получения списка версий</p>
     <div class="list" v-else>
-      <div
-        class="version-block"
-        v-for="(version, i) in versionsData.versions"
-        :key="i"
-      >
+      <div class="version-block" v-for="(version, i) in versionsData.versions" :key="i">
         <div class="info">
           <span>AuroraLauncher {{ version.version }}</span>
           <span class="dash">–</span>
-          <span class="date"
-            >Дата релиза: {{ new Date(version.date).toLocaleString() }}</span
-          >
+          <span class="date">Дата релиза: {{ new Date(version.date).toLocaleString() }}</span>
           <span v-if="version.dev" class="dev">dev</span>
         </div>
         <div class="links">
-          <a
-            v-if="version.files.js"
-            :href="version.files.js"
-            class="btn btn-primary"
-            >JS</a
-          >
+          <a v-if="version.files.js" :href="version.files.js" class="btn btn-primary">JS</a>
           <a
             v-if="version.files['binary-win']"
             :href="version.files['binary-win']"
@@ -62,9 +47,9 @@ useSeoMeta({
   title: "Скачать лаунчер",
 });
 
-const { data: versionsData, pending } = await useFetch<VersionsData>(
+const { data: versionsData, status } = await useFetch<VersionsData>(
   "https://api.aurora-launcher.ru/versions",
-  { server: false, lazy: true }
+  { server: false, lazy: true },
 );
 
 interface VersionsData {

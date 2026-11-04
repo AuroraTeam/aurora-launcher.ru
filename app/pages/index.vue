@@ -3,9 +3,7 @@
     <div class="lead">
       <div class="lead-text">
         <h1>Aurora Launcher</h1>
-        <p>
-          Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft
-        </p>
+        <p>Лаунчер с удобной кастомизацией дизайна для игровых проектов Minecraft</p>
       </div>
       <div>
         <img src="/launcher.png" alt="Launcher" />
@@ -39,7 +37,7 @@
     </div>
     <div class="dev-progress">
       <strong>Прогресс разработки:</strong>
-      <p>Aurora Launcher v0.1.0 is 82% complete</p>
+      <p>Aurora Launcher v0.0.5 is 85% complete</p>
     </div>
   </main>
 </template>
@@ -65,7 +63,6 @@
       font-weight: 300
       margin: 0
   img
-    border-radius: 10px
     @media (max-width: 767px)
       margin-top: 1rem
 .advantages
@@ -86,14 +83,17 @@
     @media (max-width: 575px)
       width: 100%
   .icon-block
-    font-size: 32px
     margin: auto
     margin-bottom: 20px
     width: 72px
-    line-height: 72px
+    height: 72px
+    font-size: 32px
     border-radius: 20px
     background-color: var(--primary)
-    // box-shadow: 6px -6px 2px 0px rgb(124 77 255 / 50%), 12px -12px 2px 0px rgb(124 77 255 / 25%)
+    box-shadow: 6px -6px 2px 0px rgb(80 128 255 / 50%), 12px -12px 2px 0px rgb(80 128 255 / 25%)
+    display: flex
+    align-items: center
+    justify-content: center
 .dev-progress
   text-align: center
   padding: 80px 0

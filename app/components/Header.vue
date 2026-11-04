@@ -4,9 +4,7 @@
       <Logo />
     </NuxtLink>
     <nav>
-      <a target="_blank" href="https://docs.aurora-launcher.ru/"
-        >Документация</a
-      >
+      <a target="_blank" href="https://docs.aurora-launcher.ru/">Документация</a>
       <NuxtLink class="btn" to="/download">Скачать</NuxtLink>
     </nav>
   </header>
