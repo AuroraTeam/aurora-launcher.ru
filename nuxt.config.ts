@@ -45,9 +45,15 @@ export default defineNuxtConfig({
         },
         { rel: "manifest", href: "/favicons/manifest.webmanifest" },
       ],
-      // script: [
-      //   { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
-      // ],
+      script: [
+        // { src: "https://jocat.ru/js/snow.min.js", tagPosition: "bodyClose" },
+        {
+          src: "https://umami.jocat.ru/script.js",
+          tagPosition: "bodyClose",
+          defer: true,
+          "data-website-id": "b8fc81f9-bca9-406d-9a63-9d591fb5e2d2",
+        },
+      ],
     },
   },
 
